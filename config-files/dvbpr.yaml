@@ -1,0 +1,5657 @@
+backend: tensorflow
+class_name: Model
+config:
+  input_layers:
+  - [input_3, 0, 0]
+  - [user_matrix, 0, 0]
+  - [observed_image, 0, 0]
+  - [non_observed_image, 0, 0]
+  layers:
+  - class_name: InputLayer
+    config:
+      batch_input_shape: !!python/tuple [null, 1]
+      dtype: float32
+      name: input_3
+      sparse: false
+    inbound_nodes: []
+    name: input_3
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_0_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_0_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_1_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_1_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_2_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_2_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_3_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_3_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_4_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_4_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_5_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_5_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_6_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_6_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_7_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_7_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_8_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_8_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_9_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_9_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_10_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_10_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_11_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_11_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_12_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_12_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_13_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_13_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_14_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_14_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_15_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_15_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_16_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_16_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_17_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_17_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_18_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_18_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_19_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_19_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_20_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_20_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_21_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_21_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_22_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_22_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_23_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_23_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_24_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_24_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_25_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_25_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_26_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_26_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_27_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_27_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_28_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_28_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_29_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_29_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_30_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_30_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_31_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_31_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_32_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_32_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_33_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_33_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_34_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_34_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_35_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_35_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_36_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_36_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_37_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_37_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_38_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_38_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_39_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_39_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_40_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_40_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_41_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_41_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_42_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_42_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_43_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_43_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_44_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_44_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_45_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_45_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_46_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_46_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_47_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_47_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_48_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_48_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_49_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_49_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_50_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_50_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_51_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_51_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_52_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_52_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_53_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_53_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_54_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_54_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_55_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_55_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_56_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_56_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_57_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_57_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_58_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_58_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_59_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_59_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_60_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_60_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_61_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_61_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_62_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_62_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_63_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_63_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_64_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_64_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_65_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_65_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_66_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_66_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_67_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_67_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_68_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_68_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_69_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_69_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_70_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_70_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_71_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_71_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_72_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_72_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_73_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_73_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_74_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_74_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_75_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_75_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_76_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_76_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_77_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_77_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_78_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_78_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_79_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_79_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_80_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_80_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_81_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_81_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_82_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_82_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_83_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_83_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_84_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_84_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_85_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_85_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_86_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_86_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_87_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_87_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_88_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_88_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_89_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_89_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_90_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_90_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_91_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_91_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_92_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_92_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_93_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_93_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_94_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_94_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_95_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_95_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_96_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_96_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_97_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_97_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_98_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_98_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_99_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_99_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_100_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_100_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_101_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_101_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_102_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_102_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_103_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_103_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_104_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_104_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_105_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_105_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_106_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_106_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_107_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_107_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_108_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_108_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_109_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_109_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_110_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_110_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_111_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_111_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_112_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_112_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_113_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_113_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_114_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_114_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_115_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_115_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_116_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_116_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_117_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_117_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_118_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_118_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_119_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_119_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_120_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_120_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_121_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_121_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_122_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_122_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_123_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_123_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_124_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_124_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_125_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_125_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_126_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_126_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_127_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_127_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_128_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_128_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_129_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_129_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_130_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_130_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_131_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_131_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_132_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_132_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_133_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_133_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_134_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_134_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_135_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_135_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_136_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_136_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_137_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_137_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_138_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_138_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_139_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_139_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_140_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_140_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_141_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_141_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_142_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_142_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_143_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_143_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_144_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_144_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_145_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_145_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_146_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_146_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_147_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_147_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_148_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_148_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_149_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_149_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_150_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_150_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_151_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_151_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_152_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_152_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_153_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_153_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_154_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_154_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_155_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_155_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_156_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_156_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_157_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_157_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_158_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_158_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_159_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_159_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_160_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_160_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_161_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_161_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_162_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_162_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_163_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_163_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_164_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_164_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_165_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_165_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_166_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_166_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_167_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_167_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_168_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_168_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_169_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_169_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_170_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_170_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_171_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_171_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_172_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_172_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_173_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_173_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_174_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_174_preferences
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config: {mean: 0.0, seed: null, stddev: 0.05}
+      kernel_regularizer:
+        class_name: L1L2
+        config: {l1: 0.0, l2: 1.0}
+      name: user_175_preferences
+      trainable: true
+      units: 100
+      use_bias: true
+    inbound_nodes:
+    - - - input_3
+        - 0
+        - 0
+        - {}
+    name: user_175_preferences
+  - class_name: InputLayer
+    config:
+      batch_input_shape: !!python/tuple [null, 224, 224, 3]
+      dtype: float32
+      name: observed_image
+      sparse: false
+    inbound_nodes: []
+    name: observed_image
+  - class_name: InputLayer
+    config:
+      batch_input_shape: !!python/tuple [null, 224, 224, 3]
+      dtype: float32
+      name: non_observed_image
+      sparse: false
+    inbound_nodes: []
+    name: non_observed_image
+  - class_name: InputLayer
+    config:
+      batch_input_shape: !!python/tuple [null, 17600, 100]
+      dtype: float32
+      name: user_matrix
+      sparse: false
+    inbound_nodes: []
+    name: user_matrix
+  - class_name: Concatenate
+    config: {axis: -1, name: theta, trainable: true}
+    inbound_nodes:
+    - - - user_0_preferences
+        - 0
+        - 0
+        - &id001 {}
+      - - user_1_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_2_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_3_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_4_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_5_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_6_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_7_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_8_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_9_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_10_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_11_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_12_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_13_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_14_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_15_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_16_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_17_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_18_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_19_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_20_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_21_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_22_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_23_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_24_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_25_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_26_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_27_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_28_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_29_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_30_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_31_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_32_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_33_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_34_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_35_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_36_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_37_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_38_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_39_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_40_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_41_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_42_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_43_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_44_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_45_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_46_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_47_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_48_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_49_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_50_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_51_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_52_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_53_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_54_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_55_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_56_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_57_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_58_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_59_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_60_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_61_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_62_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_63_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_64_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_65_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_66_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_67_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_68_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_69_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_70_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_71_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_72_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_73_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_74_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_75_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_76_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_77_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_78_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_79_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_80_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_81_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_82_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_83_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_84_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_85_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_86_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_87_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_88_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_89_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_90_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_91_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_92_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_93_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_94_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_95_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_96_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_97_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_98_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_99_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_100_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_101_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_102_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_103_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_104_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_105_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_106_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_107_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_108_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_109_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_110_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_111_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_112_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_113_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_114_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_115_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_116_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_117_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_118_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_119_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_120_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_121_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_122_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_123_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_124_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_125_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_126_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_127_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_128_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_129_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_130_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_131_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_132_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_133_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_134_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_135_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_136_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_137_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_138_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_139_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_140_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_141_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_142_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_143_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_144_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_145_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_146_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_147_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_148_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_149_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_150_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_151_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_152_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_153_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_154_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_155_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_156_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_157_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_158_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_159_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_160_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_161_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_162_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_163_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_164_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_165_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_166_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_167_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_168_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_169_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_170_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_171_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_172_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_173_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_174_preferences
+        - 0
+        - 0
+        - *id001
+      - - user_175_preferences
+        - 0
+        - 0
+        - *id001
+    name: theta
+  - class_name: Sequential
+    config:
+      layers:
+      - class_name: Conv2D
+        config:
+          activation: linear
+          activity_regularizer: null
+          batch_input_shape: !!python/tuple [null, 224, 224, 3]
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          data_format: channels_last
+          dilation_rate: &id003 !!python/tuple [1, 1]
+          dtype: float32
+          filters: 64
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          kernel_size: !!python/tuple [11, 11]
+          name: conv2d_16
+          padding: valid
+          strides: !!python/tuple [4, 4]
+          trainable: true
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_22, trainable: true}
+      - class_name: MaxPooling2D
+        config:
+          data_format: channels_last
+          name: max_pooling2d_10
+          padding: same
+          pool_size: &id002 !!python/tuple [2, 2]
+          strides: *id002
+          trainable: true
+      - class_name: ZeroPadding2D
+        config:
+          data_format: channels_last
+          name: zero_padding2d_13
+          padding: !!python/tuple
+          - !!python/tuple [2, 2]
+          - !!python/tuple [2, 2]
+          trainable: true
+      - class_name: Conv2D
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          data_format: channels_last
+          dilation_rate: *id003
+          filters: 256
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          kernel_size: !!python/tuple [5, 5]
+          name: conv2d_17
+          padding: valid
+          strides: !!python/tuple [1, 1]
+          trainable: true
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_23, trainable: true}
+      - class_name: MaxPooling2D
+        config:
+          data_format: channels_last
+          name: max_pooling2d_11
+          padding: same
+          pool_size: &id004 !!python/tuple [2, 2]
+          strides: *id004
+          trainable: true
+      - class_name: ZeroPadding2D
+        config:
+          data_format: channels_last
+          name: zero_padding2d_14
+          padding: !!python/tuple
+          - !!python/tuple [1, 1]
+          - !!python/tuple [1, 1]
+          trainable: true
+      - class_name: Conv2D
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          data_format: channels_last
+          dilation_rate: *id003
+          filters: 256
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          kernel_size: !!python/tuple [3, 3]
+          name: conv2d_18
+          padding: valid
+          strides: !!python/tuple [1, 1]
+          trainable: true
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_24, trainable: true}
+      - class_name: ZeroPadding2D
+        config:
+          data_format: channels_last
+          name: zero_padding2d_15
+          padding: !!python/tuple
+          - !!python/tuple [1, 1]
+          - !!python/tuple [1, 1]
+          trainable: true
+      - class_name: Conv2D
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          data_format: channels_last
+          dilation_rate: *id003
+          filters: 256
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          kernel_size: !!python/tuple [3, 3]
+          name: conv2d_19
+          padding: valid
+          strides: !!python/tuple [1, 1]
+          trainable: true
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_25, trainable: true}
+      - class_name: ZeroPadding2D
+        config:
+          data_format: channels_last
+          name: zero_padding2d_16
+          padding: !!python/tuple
+          - !!python/tuple [1, 1]
+          - !!python/tuple [1, 1]
+          trainable: true
+      - class_name: Conv2D
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          data_format: channels_last
+          dilation_rate: *id003
+          filters: 256
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          kernel_size: !!python/tuple [3, 3]
+          name: conv2d_20
+          padding: valid
+          strides: !!python/tuple [1, 1]
+          trainable: true
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_26, trainable: true}
+      - class_name: MaxPooling2D
+        config:
+          data_format: channels_last
+          name: max_pooling2d_12
+          padding: same
+          pool_size: &id005 !!python/tuple [2, 2]
+          strides: *id005
+          trainable: true
+      - class_name: Flatten
+        config: {data_format: channels_last, name: flatten_4, trainable: true}
+      - class_name: Dense
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          name: dense_10
+          trainable: true
+          units: 4096
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_27, trainable: true}
+      - class_name: Dropout
+        config: {name: dropout_7, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+      - class_name: Dense
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          name: dense_11
+          trainable: true
+          units: 4096
+          use_bias: true
+      - class_name: Activation
+        config: {activation: relu, name: activation_28, trainable: true}
+      - class_name: Dropout
+        config: {name: dropout_8, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+      - class_name: Dense
+        config:
+          activation: linear
+          activity_regularizer: null
+          bias_constraint: null
+          bias_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          bias_regularizer: null
+          kernel_constraint: null
+          kernel_initializer:
+            class_name: RandomNormal
+            config: {mean: 0.0, seed: null, stddev: 0.05}
+          kernel_regularizer:
+            class_name: L1L2
+            config: {l1: 0.0, l2: 0.0010000000474974513}
+          name: dense_12
+          trainable: true
+          units: 100
+          use_bias: true
+      name: cnn
+    inbound_nodes:
+    - - - observed_image
+        - 0
+        - 0
+        - {}
+    - - - non_observed_image
+        - 0
+        - 0
+        - {}
+    name: cnn
+  - class_name: Dot
+    config: {axes: 1, name: theta_u, normalize: false, trainable: true}
+    inbound_nodes:
+    - - - user_matrix
+        - 0
+        - 0
+        - &id006 {}
+      - - theta
+        - 0
+        - 0
+        - *id006
+    name: theta_u
+  - class_name: Lambda
+    config:
+      arguments: {}
+      function: !!python/tuple ['4wEAAAAAAAAAAQAAAAQAAABTAAAAcxYAAAB0AGoBfABkARkAfABkAhkAGACDAVMAKQNO6QAAAADp
+
+          AQAAACkC2gFL2gNhYnMpAdoHdGVuc29yc6kAcgYAAAD6ci9Vc2Vycy9lbGVuYWdpYXJyYXRhbm8v
+
+          RG9jdW1lbnRzL015Q29tcHV0ZXJfQXppZW5kYWxlL0NhbXBzL25leHQtb3V0Zml0LWxhYmNhbXAv
+
+          c3JjL2NvbnZvbHV0aW9uYWxfc2lhbWVzZU5ldC5pcHluYtoIPGxhbWJkYT4RAQAAcwAAAAA=
+
+          ', null, null]
+      function_type: lambda
+      name: score_difference
+      output_shape: null
+      output_shape_type: raw
+      trainable: true
+    inbound_nodes:
+    - - - cnn
+        - 1
+        - 0
+        - &id007 {}
+      - - cnn
+        - 2
+        - 0
+        - *id007
+    name: score_difference
+  - class_name: Dot
+    config: {axes: 1, name: score_rank, normalize: false, trainable: true}
+    inbound_nodes:
+    - - - theta_u
+        - 0
+        - 0
+        - &id008 {}
+      - - score_difference
+        - 0
+        - 0
+        - *id008
+    name: score_rank
+  name: model_3
+  output_layers:
+  - [score_rank, 0, 0]
+keras_version: 2.2.4
