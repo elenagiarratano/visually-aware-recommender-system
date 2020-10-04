@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = {version = "==3.5.0",index = "pypi"}
+autopep8 = {version = "==1.4",index = "pypi"} 
+pylint = {version = "*",index = "pypi"}
+
+[packages]
+marshmallow-dataclass = {version = "*",index = "pypi"}
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
