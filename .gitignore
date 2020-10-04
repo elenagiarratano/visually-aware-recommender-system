@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.DS_Store
 .Python
 build/
 develop-eggs/
@@ -119,6 +120,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
+references/
 
 # mypy
 .mypy_cache/
